@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Adestramento positivo para o convívio harmonioso entre animais de estimação e seus tutores"
+      />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet" />
+    {{ $style := resources.Get "main.scss" | toCSS (dict "outputStyle" "compressed") | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" />
+    <link rel="icon" href="/images/favicon-32.png"  sizes="32x32">
+    <link rel="icon" href="/images/favicon-64.png"  sizes="64x64">
+    <link rel="icon" href="/images/favicon-128.png" sizes="128x128">
+    <link rel="icon" href="/images/favicon-256.png" sizes="256x256">
+    <title>Canidea</title>
+  </head>
+  <body>
+    <a class="whatsapp__link" href="https://wa.me/5519997660820">
+      <img src="images/WhatsApp.svg" alt="Logotipo do WhatsApp"/>
+    </a>
+    <header class="hero">
+      <img
+        class="primary_logo_img"
+        src="images/logo.svg"
+        alt="O logotipo da Canidea é um desenho de um cachorro da raça akita"
+        />
+      <hr />
+      <!-- <h1>Canidea</h1> -->
+      <img
+        class="primary_logo_text"
+        src="images/canidea-branco.svg"
+        alt="Canidea"
+        />
+    </header>
+    <main class="main">
+
+
+
+
+      <section class="our-services">
+        <div class="container service positivo">
+          <img
+            class="service-image"
+            src="images/positivo.png"
+            alt="Pixel art de um Corgi e o texto +1 ao lado"
+            />
+          <h2 class="service-title">Adestramento positivo</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            dignissim quam nec urna tristique tempus. Duis vitae scelerisque
+            nunc.  Nullam sollicitudin varius mi, nec mattis augue blandit ac.
+            Aliquam facilisis sapien eget urna luctus lacinia. Proin tincidunt
+            nunc vel urna aliquet blandit.
+          </p>
+        </div>
+
+        <div class="container service orange">
+          <img
+            class="service-image"
+            src="images/breaking-chain.svg"
+            alt="Figura de uma corrente se partindo, simbolizando o adestramento positivo"
+            />
+          <h2 class="service-title">Livre de correntes</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            dignissim quam nec urna tristique tempus. Duis vitae scelerisque
+            nunc.  Nullam sollicitudin varius mi, nec mattis augue blandit ac.
+            Aliquam facilisis sapien eget urna luctus lacinia. Proin tincidunt
+            nunc vel urna aliquet blandit.
+          </p>
+        </div>
+
+        <div class="container service blue">
+          <img
+            class="service-image"
+            src="images/internet.svg"
+            alt="Ícone de um globo conectado, representando a internet"
+            />
+          <h2 class="service-title">Atendimento <em>online</em></h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            dignissim quam nec urna tristique tempus. Duis vitae scelerisque
+            nunc.  Nullam sollicitudin varius mi, nec mattis augue blandit ac.
+            Aliquam facilisis sapien eget urna luctus lacinia. Proin tincidunt
+            nunc vel urna aliquet blandit.
+          </p>
+        </div>
+
+        <div class="container service teal">
+          <img
+            class="service-image"
+            src="images/logos-adestradoras.svg"
+            alt="União de 3 logotipos"
+            />
+          <h2 class="service-title">Um time à sua disposição</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            dignissim quam nec urna tristique tempus. Duis vitae scelerisque
+            nunc.  Nullam sollicitudin varius mi, nec mattis augue blandit ac.
+            Aliquam facilisis sapien eget urna luctus lacinia. Proin tincidunt
+            nunc vel urna aliquet blandit.
+          </p>
+        </div>
+      </section>
+
+      <section class="dark-section social">
+        <h2>Entre em contato!</h2>
+        <p>Envie uma mensagem nas nossas redes sociais</p>
+        <a href="https://www.instagram.com/giuliannabosco/">
+          <img
+            src="images/instagram.svg"
+            alt="Logotipo da rede social Instagram" />
+        </a>
+        <a href="https://wa.me/5519997660820">
+          <img
+            src="images/WhatsApp.svg"
+            alt="Logotipo do WhatsApp" />
+        </a>
+      </section>
+
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
+<!-- vim: set sw=2 et sta:
+-->
