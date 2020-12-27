@@ -1,0 +1,52 @@
+---
+cartoes:
+  - titulo: Adestramento positivo
+    estilo: positivo
+    imagem: images/positivo.png
+    imagemAlt: Pixel art de um Shiba e o texto +1 ao lado
+    texto: |
+      As técnicas de modificação comportamental por mim utilizadas são baseadas
+      no reforço positivo, ou seja, ensinamos ao pet o que queremos que ele
+      faça em uma determinada situação e o recompensamos por isso. Dessa forma,
+      o treino elaborado não usa força nem o medo para educar, levando em conta
+      o bem estar do indivíduo.
+
+
+  - titulo: Livre de correntes
+    estilo: orange
+    imagem: images/breaking-chain.svg
+    imagemAlt: Figura de uma corrente se partindo, simbolizando o adestramento positivo
+    texto: |
+      Até hoje temos profissionais que baseiam suas metodologias em estudos
+      antiquados e desatualizados, justificando seus treinos em experiências
+      anedóticas e pontuais. Aqui na Canidea é a ciência do comportamento que
+      pauta todo o plano de terapia comportamental, objetivando sempre uma
+      relação harmoniosa entre o pet e sua família.
+
+
+  - titulo: Atendimento *online*
+    estilo: blue
+    imagem: images/internet.svg
+    imagemAlt: Ícone de um globo conectado, representando a internet
+    texto: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+      dignissim quam nec urna tristique tempus. Duis vitae scelerisque nunc.
+      Nullam sollicitudin varius mi, nec mattis augue blandit ac.  Aliquam
+      facilisis sapien eget urna luctus lacinia. Proin tincidunt nunc vel
+      urna aliquet blandit.
+
+
+  - titulo: Sobre mim
+    estilo: teal
+    imagem: images/logos-adestradoras.svg
+    imagemAlt: União de 3 logotipos
+    texto: |
+      Giulianna Bosco é graduada e pós graduada em Química pela Unicamp.
+      Atuou tanto em pesquisa no ramo industrial quanto acadêmica, nas áreas
+      de Química e Computação. Seu desejo de trabalhar com animais, contudo,
+      suplantou sua vontade de ficar no laboratório, e ela vem se dedicando à
+      educação e modificação comportamental de cães e gatos desde 2017.
+
+      Participou de diversos cursos nacionais e internacionais sobre
+      comportamento animal e atualmente estuda para se tornar especialista em
+      Comportamento Animal pela UTP.

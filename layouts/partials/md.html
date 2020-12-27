@@ -1,0 +1,6 @@
+{{ $data := . | markdownify }}
+{{ if not ( strings.Contains $data "<p>" ) }}
+	<p>{{ $data }}</p>
+{{ else }}
+	{{ $data }}
+{{ end }}

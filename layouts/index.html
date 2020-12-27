@@ -44,70 +44,23 @@
 
 
       <section class="our-services">
-        <div class="container service positivo">
-          <img
-            class="service-image"
-            src="images/positivo.png"
-            alt="Pixel art de um Corgi e o texto +1 ao lado"
-            />
-          <h2 class="service-title">Adestramento positivo</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            dignissim quam nec urna tristique tempus. Duis vitae scelerisque
-            nunc.  Nullam sollicitudin varius mi, nec mattis augue blandit ac.
-            Aliquam facilisis sapien eget urna luctus lacinia. Proin tincidunt
-            nunc vel urna aliquet blandit.
-          </p>
-        </div>
 
-        <div class="container service orange">
+        {{ range .Site.Data.landingPage.cartoes }}
+        <div class="container service {{ .estilo }}">
           <img
             class="service-image"
-            src="images/breaking-chain.svg"
-            alt="Figura de uma corrente se partindo, simbolizando o adestramento positivo"
+            src="{{ .imagem }}"
+            alt="{{ .imagemAlt }}"
             />
-          <h2 class="service-title">Livre de correntes</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            dignissim quam nec urna tristique tempus. Duis vitae scelerisque
-            nunc.  Nullam sollicitudin varius mi, nec mattis augue blandit ac.
-            Aliquam facilisis sapien eget urna luctus lacinia. Proin tincidunt
-            nunc vel urna aliquet blandit.
-          </p>
+          <h2 class="service-title">{{ .titulo | markdownify }}</h2>
+          {{ partial "md.html" .texto }}
         </div>
+        {{ end }} <!-- end of range .Site.Data.landingPage.cartoes -->
 
-        <div class="container service blue">
-          <img
-            class="service-image"
-            src="images/internet.svg"
-            alt="Ícone de um globo conectado, representando a internet"
-            />
-          <h2 class="service-title">Atendimento <em>online</em></h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            dignissim quam nec urna tristique tempus. Duis vitae scelerisque
-            nunc.  Nullam sollicitudin varius mi, nec mattis augue blandit ac.
-            Aliquam facilisis sapien eget urna luctus lacinia. Proin tincidunt
-            nunc vel urna aliquet blandit.
-          </p>
-        </div>
-
-        <div class="container service teal">
-          <img
-            class="service-image"
-            src="images/logos-adestradoras.svg"
-            alt="União de 3 logotipos"
-            />
-          <h2 class="service-title">Um time à sua disposição</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            dignissim quam nec urna tristique tempus. Duis vitae scelerisque
-            nunc.  Nullam sollicitudin varius mi, nec mattis augue blandit ac.
-            Aliquam facilisis sapien eget urna luctus lacinia. Proin tincidunt
-            nunc vel urna aliquet blandit.
-          </p>
-        </div>
       </section>
+
+
+
 
       <section class="dark-section social">
         <h2>Entre em contato!</h2>
@@ -124,10 +77,12 @@
         </a>
       </section>
 
+
+
+
     </main>
     <footer>
     </footer>
   </body>
 </html>
-<!-- vim: set sw=2 et sta:
--->
+
