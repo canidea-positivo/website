@@ -48,7 +48,7 @@
         {{ range .Site.Data.landingPage.cartoes }}
         <div class="container service {{ .estilo }}">
           <img
-            class="service-image"
+            class="service-image {{ .imagemClass }}"
             src="{{ .imagem }}"
             alt="{{ .imagemAlt }}"
             />

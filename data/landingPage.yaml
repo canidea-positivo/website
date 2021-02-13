@@ -40,6 +40,7 @@ cartoes:
   - titulo: Quem sou
     estilo: teal
     imagem: images/giu.jpg
+    imagemClass: round
     imagemAlt: Foto da Giulianna
     texto: |
       Giulianna Bosco fez graduação e pós graduação em Química na Unicamp e
