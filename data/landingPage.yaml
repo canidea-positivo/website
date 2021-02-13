@@ -29,24 +29,22 @@ cartoes:
     imagem: images/internet.svg
     imagemAlt: Ícone de um globo conectado, representando a internet
     texto: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-      dignissim quam nec urna tristique tempus. Duis vitae scelerisque nunc.
-      Nullam sollicitudin varius mi, nec mattis augue blandit ac.  Aliquam
-      facilisis sapien eget urna luctus lacinia. Proin tincidunt nunc vel
-      urna aliquet blandit.
+      Esse formato transcende fronteiras, sendo acessível para o tutor em
+      qualquer parte do mundo. Nele, o tutor é agente ativo na transformação
+      comportamental do seu animal e os resultados são surpreendentes, pois
+      ambos componentes da relação são educados e, dessa forma, temos pessoas
+      emancipadas na educação de seus pets. É uma jornada de autoconhecimento
+      seu, tutor, e do seu pet.
 
 
-  - titulo: Sobre mim
+  - titulo: Quem sou
     estilo: teal
-    imagem: images/logos-adestradoras.svg
-    imagemAlt: União de 3 logotipos
+    imagem: images/giu.jpg
+    imagemAlt: Foto da Giulianna
     texto: |
-      Giulianna Bosco é graduada e pós graduada em Química pela Unicamp.
-      Atuou tanto em pesquisa no ramo industrial quanto acadêmica, nas áreas
-      de Química e Computação. Seu desejo de trabalhar com animais, contudo,
-      suplantou sua vontade de ficar no laboratório, e ela vem se dedicando à
-      educação e modificação comportamental de cães e gatos desde 2017.
-
-      Participou de diversos cursos nacionais e internacionais sobre
-      comportamento animal e atualmente estuda para se tornar especialista em
-      Comportamento Animal pela UTP.
+      Giulianna Bosco fez graduação e pós graduação em Química na Unicamp e
+      atuou em pesquisa e desenvolvimento no meio acadêmico e na indústria.
+      Atualmente, cursa pós graduação em Comportamento Animal e dedica-se a
+      educação, adestramento e modificação comportamental de pets. Fez cursos
+      na área de enriquecimento ambiental, comportamento felino e adestramento
+      de cães
