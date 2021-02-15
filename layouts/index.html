@@ -1,88 +1,85 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="Adestramento positivo para o convívio harmonioso entre animais de estimação e seus tutores" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Canidea" />
-    <meta property="og:locale" content="pt_BR" />
-    <meta property="og:image" content="/images/favicon-256.png" />
-    <meta property="og:description" content="Adestramento positivo para o convívio harmonioso entre animais de estimação e seus tutores" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
-      rel="stylesheet" />
-    {{ $style := resources.Get "main.scss" | toCSS (dict "outputStyle" "compressed") | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-    <link rel="icon" href="/images/favicon-32.png"  sizes="32x32">
-    <link rel="icon" href="/images/favicon-64.png"  sizes="64x64">
-    <link rel="icon" href="/images/favicon-128.png" sizes="128x128">
-    <link rel="icon" href="/images/favicon-256.png" sizes="256x256">
-    <title>Canidea</title>
-  </head>
-  <body>
-    <a class="whatsapp__link" href="https://wa.me/5519997660820">
-      <img src="images/WhatsApp.svg" alt="Logotipo do WhatsApp"/>
-    </a>
-    <header class="hero">
-      <img
-        class="primary_logo_img"
-        src="images/logo.svg"
-        alt="O logotipo da Canidea é um desenho de um cachorro da raça akita"
-        />
-      <hr />
-      <!-- <h1>Canidea</h1> -->
-      <img
-        class="primary_logo_text"
-        src="images/canidea-branco.svg"
-        alt="Canidea"
-        />
-    </header>
-    <main class="main">
+{{ define "main" }}
 
+{{ partial "whatsapp.html" . }}
 
+<main class="mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h1 class="mb-4">
+          Convívio harmonioso entre animais e tutores
+        </h1>
+        <p class="mb-3">
+          Com base na ciência do comportamento animal, auxilio tutores a
+          entenderem melhor seus animais de estimação e dou protocolos
+          detalhados para criar um ambiente harmonioso.
+        </p>
+        <img
+          class="ikki img-fluid rounded"
+          src="images/ikki.jpg"
+          alt="Foto do Ikki, o Akita"
+          />
+      </div>
+    </div>
+  </div>
+</main>
 
-
-      <section class="our-services">
-
-        {{ range .Site.Data.landingPage.cartoes }}
-        <div class="container service {{ .estilo }}">
-          <img
-            class="service-image {{ .imagemClass }}"
-            src="{{ .imagem }}"
-            alt="{{ .imagemAlt }}"
-            />
-          <h2 class="service-title">{{ .titulo | markdownify }}</h2>
-          {{ partial "md.html" .texto }}
+<section class="section bg-light my-5 py-4">
+  <div class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h2 class="section-title">
+          Me envie uma mensagem sem compromisso!
+        </h2>
+      </div>
+      <div class="col-12">
+        <div>
+          <a class="btn btn-primary" href="https://wa.me/5519997660820">
+            <img width="30" src="/images/whatsapp-nobg.svg" />
+            (19) 99766-0820
+          </a>
         </div>
-        {{ end }} <!-- end of range .Site.Data.landingPage.cartoes -->
+      </div>
+    </div>
+  </div>
+</section>
 
-      </section>
+{{ with site.Data.landingPage }}
+{{ range $i,$p := .cartoes }}
+{{ if modBool $i 2 }}
+<section class="section py-3">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1">
+        <h2 class="section-title">{{ .titulo | markdownify }}</h2>
+        {{ partial "md.html" .texto }}
+      </div>
+      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+        <div class="text-center">
+          <img src="{{ .imagem }}" alt="{{ .imagemAlt }}" class="img-fluid section-image {{ .imagemClass }}" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ else }}
+<section class="section bg-light py-3">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="text-center">
+          <img src="{{ .imagem }}" alt="{{ .imagemAlt }}" class="img-fluid section-image {{ .imagemClass }}" />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h2 class="section-title">{{ .titulo | markdownify }}</h2>
+        {{ partial "md.html" .texto }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }} <!-- end if -->
+{{ end }} <!-- end range -->
+{{ end }} <!-- end with -->
 
-
-
-
-      <section class="dark-section social">
-        <h2>Entre em contato!</h2>
-        <p>Envie uma mensagem nas nossas redes sociais</p>
-        <a href="https://www.instagram.com/canideagiu/">
-          <img
-            src="images/instagram.svg"
-            alt="Logotipo da rede social Instagram" />
-        </a>
-        <a href="https://wa.me/5519997660820">
-          <img
-            src="images/WhatsApp.svg"
-            alt="Logotipo do WhatsApp" />
-        </a>
-      </section>
-
-
-
-
-    </main>
-    <footer>
-    </footer>
-  </body>
-</html>
-
+{{ end }}

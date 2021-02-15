@@ -1,57 +1,14 @@
-* {
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+.banner {
+  padding-top: 100px;
 }
 
-body {
-  line-height: 1.6;
-  padding: 0;
-  margin: 0;
+.ikki {
+  max-height: 500px;
 }
 
-h1, h2, h3, p {
-  margin: 0;
-}
-
-.round {
-  border-radius: 50%;
-}
-
-.hero {
-  text-align: center;
-  background: #222;
-  padding: 4rem;
-
-  @supports (background-blend-mode: multiply) {
-    background:
-      url(images/ikki.jpg),
-      radial-gradient(#AAA, #111);
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: cover;
-  }
-}
-
-
-.primary_logo_text {
-  height: clamp(3rem, calc(5vw + 1rem), 4.5rem);
-}
-
-.primary_logo_img {
-  display: block;
-  margin: 0 auto;
-  width: clamp(5rem, calc(5vw + 5rem), 8rem);
-  height: auto;
-}
-
-hr {
-  border: 0;
-  border-top: 0.3rem solid #e2725bff;
-}
-
-.main {
-  padding: 0 1rem;
+.section-image {
+  min-height: 200px;
+  max-height: 250px;
 }
 
 .whatsapp__link {
@@ -67,70 +24,6 @@ hr {
   &:hover, &:focus {
     transform: scale(1.2);
   }
-}
-
-.dark-section {
-  background: #222;
-  color: white;
-  margin: 1rem -1rem 0rem -1rem;
-  padding: 2rem 1rem;
-}
-
-.social img {
-  width: 3rem;
-}
-
-.our-services {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.positivo {
-  background: radial-gradient(
-    hsl(91, 69%, 56%),
-    hsl(75, 77%, 37%));
-}
-
-.orange {
-  background: radial-gradient(
-    hsl(43, 74%, 66%),
-    hsl(27, 87%, 67%));
-}
-
-.blue {
-  background: radial-gradient(
-    hsl(261, 74%, 66%),
-    hsl(245, 87%, 67%));
-}
-
-.teal {
-  background: radial-gradient(
-    hsl(192, 74%, 66%),
-    hsl(213, 87%, 57%));
-}
-
-.service {
-  color: white;
-  border-radius: .8rem;
-  text-align: center;
-  padding: 1rem;
-  max-width: 400px;
-  transition: transform 0.2s;
-  margin-top: 1rem;
-}
-
-.service-image {
-  max-width: 100%;
-  height: 10rem;
-}
-
-.service-title {
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
-  font-weight: 900;
-  text-shadow: 0 0 1em rgba(#000, 0.8);
-  line-height: 1.1;
 }
 
 /* vim: set sw=2 et sta:

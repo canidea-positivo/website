@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="{{ with site.LanguageCode }}{{ . }}{{ else }}pt-BR{{ end }}">
+{{- partial "head.html" . -}}
+<body>
+  {{- partial "header.html" . -}}
+  {{- block "main" . }}{{- end }}
+  {{- partial "footer.html" . -}}
+  <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
