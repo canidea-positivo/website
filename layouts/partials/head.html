@@ -12,7 +12,7 @@
     rel="stylesheet" />
   {{ $style := resources.Get "main.scss" | toCSS (dict "outputStyle" "compressed") | fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
   <link rel="icon" href="/images/favicon-32.png"  sizes="32x32">
   <link rel="icon" href="/images/favicon-64.png"  sizes="64x64">
   <link rel="icon" href="/images/favicon-128.png" sizes="128x128">
