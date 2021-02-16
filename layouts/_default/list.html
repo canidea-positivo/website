@@ -1,13 +1,30 @@
 {{ define "main" }}
 
-<section class="section">
+<article class="section mt-5">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <div class="content">{{ .Content }}</div>
+    {{ range .Pages }}
+    <div class="row justify-content-center mb-5">
+      {{ if isset .Params "image" }}
+      <div class="col-md-6 order-2 order-md-1">
+        <h2><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+        <p>{{ .Summary }}</p>
+        <a class="btn btn-primary" href="{{ .RelPermalink }}">Leia mais</a>
       </div>
+      <div class="col-md-6 col-lg-4 order-1 order-md-2 mb-4 mb-md-0">
+        <div class="text-center">
+          <img src="{{ .Params.image }}" class="img-fluid rounded" />
+        </div>
+      </div>
+      {{ else }}
+      <div class="col-md-12 col-lg-10 order-2 order-md-1">
+        <h2><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+        <p>{{ .Summary }}</p>
+        <a class="btn btn-primary" href="{{ .RelPermalink }}">Leia mais</a>
+      </div>
+      {{ end }} <!-- end with -->
     </div>
+    {{ end }} <!-- end range -->
   </div>
-</section>
+</article>
 
 {{ end }}

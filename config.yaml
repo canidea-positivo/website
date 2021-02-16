@@ -1,6 +1,7 @@
 ---
 baseURL: https://canidea.com.br
 languageCode: pt-br
+summaryLength: 15
 title: |
   Canidea—adestramento positivo para o convívio harmonioso entre animais de
   estimação e seus tutores

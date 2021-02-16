@@ -1,6 +1,7 @@
 ---
 title: "Adestramento Positivo"
 date: 2021-02-13T15:17:29-03:00
+image: /images/ikki.jpg
 draft: true
 ---
 

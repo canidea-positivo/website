@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+<article class="section mt-5">
+  <div class="container content">
+    <h1>{{ .Title }}</h1>
+    <p class="small" title="{{ .Date }}">📅 <em>{{ .Date.Format "02/01/2006" }}</em></p>
+    {{ .Content }}
+  </div>
+</article>
+
+{{ end }}

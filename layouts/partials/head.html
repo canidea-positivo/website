@@ -7,9 +7,6 @@
   <meta property="og:image" content="/images/favicon-256.png" />
   <meta property="og:description" content="Adestramento positivo para o convívio harmonioso entre animais de estimação e seus tutores" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
-    rel="stylesheet" />
   {{ $style := resources.Get "main.scss" | toCSS (dict "outputStyle" "compressed") | fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
   <link rel="stylesheet" href="/css/bootstrap.min.css" />
