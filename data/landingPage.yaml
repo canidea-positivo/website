@@ -1,51 +1,43 @@
 ---
 cartoes:
-  - titulo: Adestramento positivo
-    estilo: positivo
-    imagem: images/positivo.png
-    imagemAlt: Pixel art de um Shiba e o texto +1 ao lado
-    texto: |
-      As técnicas de modificação comportamental por mim utilizadas são baseadas
-      no reforço positivo, ou seja, ensinamos ao pet o que queremos que ele
-      faça em uma determinada situação e o recompensamos por isso. Dessa forma,
-      o treino elaborado não usa força nem o medo para educar, levando em conta
-      o bem estar do indivíduo.
-
-
-  - titulo: Livre de correntes
-    estilo: orange
-    imagem: images/breaking-chain.svg
-    imagemAlt: Figura de uma corrente se partindo, simbolizando o adestramento positivo
-    texto: |
-      Até hoje temos profissionais que baseiam suas metodologias em estudos
-      antiquados e desatualizados, justificando seus treinos em experiências
-      anedóticas e pontuais. Aqui na Canidea é a ciência do comportamento que
-      pauta todo o plano de terapia comportamental, objetivando sempre uma
-      relação harmoniosa entre o pet e sua família.
-
-
-  - titulo: Atendimento *online*
-    estilo: blue
-    imagem: images/internet.svg
-    imagemAlt: Ícone de um globo conectado, representando a internet
-    texto: |
-      Esse formato transcende fronteiras, sendo acessível para o tutor em
-      qualquer parte do mundo. Nele, o tutor é agente ativo na transformação
-      comportamental do seu animal e os resultados são surpreendentes, pois
-      ambos componentes da relação são educados e, dessa forma, temos pessoas
-      emancipadas na educação de seus pets. É uma jornada de autoconhecimento
-      seu, tutor, e do seu pet.
-
-
-  - titulo: Quem sou
-    estilo: teal
-    imagem: images/giu.jpg
-    imagemClass: rounded-circle
-    imagemAlt: Foto da Giulianna
-    texto: |
-      Giulianna Bosco fez graduação e pós graduação em Química na Unicamp e
-      atuou em pesquisa e desenvolvimento no meio acadêmico e na indústria.
-      Atualmente, cursa pós graduação em Comportamento Animal e dedica-se a
-      educação, adestramento e modificação comportamental de pets. Fez cursos
-      na área de enriquecimento ambiental, comportamento felino e adestramento
-      de cães
+- titulo: Adestramento positivo
+  estilo: ''
+  imagem: images/positivo.png
+  imagemAlt: Pixel art de um Shiba e o texto +1 ao lado
+  texto: As técnicas de modificação comportamental por mim utilizadas são baseadas
+    no reforço positivo, ou seja, ensinamos ao pet o que queremos que ele faça em
+    uma determinada situação e o recompensamos por isso. Dessa forma, o treino elaborado
+    não usa força nem o medo para educar, levando em conta o bem estar do indivíduo.
+- titulo: Livre de correntes
+  estilo: orange
+  imagem: images/breaking-chain.svg
+  imagemAlt: Figura de uma corrente se partindo, simbolizando o adestramento positivo
+  texto: |
+    Até hoje temos profissionais que baseiam suas metodologias em estudos
+    antiquados e desatualizados, justificando seus treinos em experiências
+    anedóticas e pontuais. Aqui na Canidea é a ciência do comportamento que
+    pauta todo o plano de terapia comportamental, objetivando sempre uma
+    relação harmoniosa entre o pet e sua família.
+- titulo: Atendimento *online*
+  estilo: blue
+  imagem: images/internet.svg
+  imagemAlt: Ícone de um globo conectado, representando a internet
+  texto: |
+    Esse formato transcende fronteiras, sendo acessível para o tutor em
+    qualquer parte do mundo. Nele, o tutor é agente ativo na transformação
+    comportamental do seu animal e os resultados são surpreendentes, pois
+    ambos componentes da relação são educados e, dessa forma, temos pessoas
+    emancipadas na educação de seus pets. É uma jornada de autoconhecimento
+    seu, tutor, e do seu pet.
+- titulo: Quem sou
+  estilo: teal
+  imagem: images/giu.jpg
+  imagemClass: rounded-circle
+  imagemAlt: Foto da Giulianna
+  texto: |
+    Giulianna Bosco fez graduação e pós graduação em Química na Unicamp e
+    atuou em pesquisa e desenvolvimento no meio acadêmico e na indústria.
+    Atualmente, cursa pós graduação em Comportamento Animal e dedica-se a
+    educação, adestramento e modificação comportamental de pets. Fez cursos
+    na área de enriquecimento ambiental, comportamento felino e adestramento
+    de cães

@@ -28,3 +28,5 @@ fields:
       wysiwyg: true
       schema:
         format: markdown
+pages:
+- data/landingPage.yaml
