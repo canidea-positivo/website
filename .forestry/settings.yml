@@ -9,15 +9,19 @@ sections:
   label: Pagina inicial
   create: none
   match: "*.yaml"
+  templates:
+  - homepage
 - type: document
   path: content/about/_index.md
   label: Sobre mim
 - type: directory
   path: content/blog
   label: Blog
-  create: all
+  create: documents
   match: "**/*"
   exclude: _index.md
+  templates:
+  - blog-post
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
