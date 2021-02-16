@@ -1,0 +1,23 @@
+---
+label: Homepage
+hide_body: true
+fields:
+- type: field_group_list
+  name: cartoes
+  label: cartoes
+  fields:
+  - type: text
+    name: titulo
+    label: titulo
+  - type: text
+    name: estilo
+    label: estilo
+  - type: file
+    name: imagem
+    label: imagem
+  - type: text
+    name: imagemAlt
+    label: imagemAlt
+  - type: textarea
+    name: texto
+    label: texto
