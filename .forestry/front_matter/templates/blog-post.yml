@@ -4,10 +4,19 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Título
+  description: Título do seu post
+  config:
+    required: true
 - type: datetime
   name: date
-  label: date
+  label: Data
+  default: now
+  config:
+    required: true
+  description: Data do post
 - type: file
   name: image
-  label: image
+  label: Imagem
+  description: A imagem do post será exibida na listagem do blog. Não é obrigatório
+    ter imagem.
