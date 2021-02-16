@@ -8,7 +8,7 @@ sections:
   path: data
   label: Pagina inicial
   create: none
-  match: "*.yml"
+  match: "*.yaml"
 - type: document
   path: content/about/_index.md
   label: Sobre mim
