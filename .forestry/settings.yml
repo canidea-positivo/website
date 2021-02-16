@@ -4,10 +4,14 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: directory
+  path: data
+  label: Pagina inicial
+  create: none
+  match: "*.yml"
 - type: document
   path: content/about/_index.md
   label: Sobre mim
-  match: "**/*"
 - type: directory
   path: content/blog
   label: Blog
