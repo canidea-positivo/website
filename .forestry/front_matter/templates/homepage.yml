@@ -4,20 +4,27 @@ hide_body: true
 fields:
 - type: field_group_list
   name: cartoes
-  label: cartoes
+  label: Cartões da página inicial
   fields:
   - type: text
     name: titulo
-    label: titulo
-  - type: text
-    name: estilo
-    label: estilo
+    label: Título
+    description: O título deste cartão na página inicial
   - type: file
     name: imagem
-    label: imagem
+    label: Imagem
   - type: text
     name: imagemAlt
-    label: imagemAlt
+    label: Descrição da Imagem
+  - type: text
+    name: estilo
+    label: Estilo CSS extra
+    description: 'Parâmetro avançado para adicionar um estilo CSS extra na imagem.
+      Ex: "rounded-circle" vai tornar a imagem redonda.'
   - type: textarea
     name: texto
-    label: texto
+    label: Texto
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
