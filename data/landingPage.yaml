@@ -19,7 +19,7 @@ cartoes:
     pauta todo o plano de terapia comportamental, objetivando sempre uma
     relação harmoniosa entre o pet e sua família.
 - titulo: Atendimento *online*
-  estilo: blue
+  estilo: ''
   imagem: images/internet.svg
   imagemAlt: Ícone de um globo conectado, representando a internet
   texto: |
