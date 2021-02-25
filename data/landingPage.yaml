@@ -10,10 +10,10 @@ cartoes:
   estilo: ''
   imagem: images/positivo.png
   imagemAlt: Pixel art de um Shiba e o texto +1 ao lado
-  texto: As técnicas de modificação comportamental por mim utilizadas são baseadas
-    no reforço positivo, ou seja, ensinamos ao pet o que queremos que ele faça em
-    uma determinada situação e o recompensamos por isso. Dessa forma, o treino elaborado
-    não usa força nem o medo para educar, levando em conta o bem estar do indivíduo.
+  texto: As técnicas de modificação comportamental utilizadas são baseadas no reforço
+    positivo, ou seja, ensinamos ao pet o que queremos que ele faça em uma determinada
+    situação e o recompensamos por isso. Dessa forma, o treino elaborado não usa força
+    nem o medo para educar, levando em conta o bem estar do indivíduo.
 - titulo: Livre de correntes
   estilo: ''
   imagem: images/breaking-chain.svg
