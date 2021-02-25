@@ -2,6 +2,20 @@
 label: Homepage
 hide_body: true
 fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Título
+- name: subtitle
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Subtítulo
 - type: field_group_list
   name: cartoes
   label: Cartões da página inicial
